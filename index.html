@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./index.css">
-
 </head>
 <body>
 <nav id="topmenu" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -35,21 +34,70 @@
 
 <div class="container">
 	<div class="jumbotron">
-		<h1>172.16.73.6 Portal</h1>
+		<h1><br>172.16.73.6 Portal</h1>
 		<p>A portal for JUIT Study Material</p>
+		<!-- <ul class="breadcrumb">
+			<li><a href="#">172.16.73.6</a></li>
+		</ul> -->
+	</div>
+	<div class="container">
+		<div class="row">
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-8">
+
+			<div id="degree" class="btn-group btn-group-justified selector selector-top">
+		  <a name="btech" href="#" onclick="ondegree(this)" class="btn btn-default">B.Tech.</a>
+		  <a name="mtech" href="#" onclick="ondegree(this)" class="btn btn-default">M.Tech.</a>
+		  <a name="phd" href="#" onclick="ondegree(this)" class="btn btn-default">Ph.D.</a>
+			</div>
+
+			<div id="department" class="btn-group btn-group-justified selector hidden">
+		  <a href="#" onclick="ondep(this)" class="btn btn-default">CSE</a>
+		  <a href="#" onclick="ondep(this)" class="btn btn-default">ECE</a>
+		  <a href="#" onclick="ondep(this)" class="btn btn-default">IT</a>
+		  <a href="#" onclick="ondep(this)" class="btn btn-default">CE</a>
+		  <a href="#" onclick="ondep(this)" class="btn btn-default">BI</a>
+		  <a href="#" onclick="ondep(this)" class="btn btn-default">BT</a>
+		  <a href="#" onclick="ondep(this)" class="btn btn-default">Pharma</a>
+			</div>
+
+			<div id="semester" class="btn-group btn-group-justified selector hidden">
+		  <a href="#" onclick="onsem(this)" class="btn btn-default">1</a>
+		  <a href="#" onclick="onsem(this)" class="btn btn-default">2</a>
+		  <a href="#" onclick="onsem(this)" class="btn btn-default">3</a>
+		  <a href="#" onclick="onsem(this)" class="btn btn-default">4</a>
+		  <a href="#" onclick="onsem(this)" class="btn btn-default">5</a>
+		  <a href="#" onclick="onsem(this)" class="btn btn-default">6</a>
+		  <a href="#" onclick="onsem(this)" class="btn btn-default">7</a>
+		  <a href="#" onclick="onsem(this)" class="btn btn-default">8</a>
+			</div>
+
+		</div>
+		<div class="col-sm-2">
+		</div>
+	</div>
 	</div>
 </div>
 
 <footer>
 <div class="container">
-<div class="alert alert-info">
-    <a href="#" class="close" data-dismiss="alert">&times;</a>
-    <strong>Warning!</strong> There was a problem with your network connection.
+<div class="row">
+	<div class="col-sm-12">
+	<br><br>
+		<div class="alert alert-info">
+    <a href="#" onclick="dismisshelp()" class="close" data-dismiss="alert">&times;</a>
+    <span id="help"><strong>Hey!</strong> Select your degree to proceed.</span>
   </div>	
+	</div>
+</div>
 </div>
  
 </footer>
+
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./index.js"></script>
+
 </body>
 </html>
